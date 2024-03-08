@@ -1,0 +1,38 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/devcontainers/images/tree/main/src/javascript-node
+{
+    "name": "Condicionais- Exercício ",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "hostRequirements": {
+      "cpus": 2
+    },
+    "waitFor": "onCreateCommand",
+    "updateContentCommand": "pip install pytest mock",
+    "postCreateCommand": "",
+    "postAttachCommand": {
+      "server": "pytest"
+    },
+  
+    // Configure tool-specific properties.
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+            "ms-python.pylint",
+            "ms-python.python"
+        ],
+        "settings": {
+          "emmet.includeLanguages": {
+            "python": "python"
+          },
+          "emmet.triggerExpansionOnTab": true
+        }
+      }
+    },
+  
+    "features": {
+      "ghcr.io/devcontainers/features/github-cli:1": {},
+      "ghcr.io/devcontainers/features/azure-cli:1": {}
+    }
+  }
