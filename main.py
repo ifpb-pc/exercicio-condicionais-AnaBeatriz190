@@ -3,7 +3,7 @@ def q1():
     1. Escreva um programa que solicita um número ao usuário e determina se 
     é positivo, negativo ou zero. 
     """
-    n = int(input("Digite um numero"))
+    n = int(input("Digite um numero: "))
     if n > 0:
         print("positivo")
     elif n < 0:
@@ -16,21 +16,33 @@ def q2():
     2. Verificação de Número Par/Ímpar: Crie um programa que pede ao usuário 
     um número e imprima se ele é par ou ímpar.
     """
-    print("par ")
+    numero = int(input('Digite um número:'))
+    resultado = numero % 2
+    if resultado == 0:
+        print('par')
+    else:
+        print('ímpar')
 
 def q3():
     """
     3. Calculadora Simples: Faça uma calculadora que pede ao usuário dois 
     números e uma operação (+, -, *, /) e imprima o resultado dessa operação.
     """
-    pass
+    num1 = int(input('Digite um número: '))
+    num2 = int(input('Digite outro número: '))
+    operacao = 
+
+    print(float(num1 + num2))
+    print(float(num1 - num2))
+    print(num1 * num2)
+    print(num1 / num2)
+    
 
 def q4():
     """
     4. Maior de Três Números: Escreva um programa que solicita três números 
     ao usuário e imprima o maior dentre eles.
     """
-    pass
 
 def q5():
     """
